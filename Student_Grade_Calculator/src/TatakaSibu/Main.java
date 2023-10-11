@@ -1,4 +1,4 @@
-package TatakaSibu;
+package Student_Grade_Calculator.src.TatakaSibu;
 
 import javax.swing.JOptionPane;
 import java.text.DecimalFormat;

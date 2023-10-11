@@ -49,7 +49,7 @@ public class Main {
 
         String playAgain = JOptionPane.showInputDialog(null, "Do you want to play again? (Yes/No)");
 
-        if (playAgain != null && playAgain.equalsIgnoreCase("y")) {
+        if (playAgain != null && playAgain.equalsIgnoreCase("Yes")) {
             main(args);
         } else {
             JOptionPane.showMessageDialog(null, "Thank you for playing!");

@@ -17,18 +17,18 @@ public class ATM {
 
             switch (choice) {
                 case 0:
-                    JOptionPane.showMessageDialog(null, "Current Balance: $" + account.getBalance());
+                    JOptionPane.showMessageDialog(null, "Current Balance: R" + account.getBalance());
                     break;
                 case 1:
                     double depositAmount = getAmount("Enter deposit amount:");
                     account.deposit(depositAmount);
-                    JOptionPane.showMessageDialog(null, "Deposit Successful. Current Balance: $" + account.getBalance());
+                    JOptionPane.showMessageDialog(null, "Deposit Successful. Current Balance: R" + account.getBalance());
                     break;
                 case 2:
                     double withdrawAmount = getAmount("Enter withdrawal amount:");
                     boolean success = account.withdraw(withdrawAmount);
                     if (success) {
-                        JOptionPane.showMessageDialog(null, "Withdrawal Successful. Current Balance: $" + account.getBalance());
+                        JOptionPane.showMessageDialog(null, "Withdrawal Successful. Current Balance: R" + account.getBalance());
                     } else {
                         JOptionPane.showMessageDialog(null, "Insufficient funds. Withdrawal failed.");
                     }
